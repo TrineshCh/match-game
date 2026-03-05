@@ -1,14 +1,19 @@
+// 💡 [RYFT REVIEW - SUGGESTION] Importing CSS file directly, consider using CSS modules or importing it in a separate file
 import './App.css'
 
+// 💡 [RYFT REVIEW - SUGGESTION] Consider importing GameInfo component with a default import or destructuring it
 import GameInfo from './component'
 
+// 💡 [RYFT REVIEW - SUGGESTION] Consider moving lists to a separate file or a utility function for better reusability
 // These are the lists used in the application. You can move them to any component needed.
 const tabsList = [
+// 💡 [RYFT REVIEW - SUGGESTION] Consider using a more robust data structure for tabsList, such as an Enum or a Map
   {tabId: 'FRUIT', displayText: 'Fruits'},
   {tabId: 'ANIMAL', displayText: 'Animals'},
   {tabId: 'PLACE', displayText: 'Places'},
 ]
 const imagesList = [
+// 💡 [RYFT REVIEW - SUGGESTION] Consider using a more robust data structure for imagesList, such as a Map or an object with more properties
   {
     id: 'b11ec8ce-35c9-4d67-a7f7-07516d0d8186',
     imageUrl:
@@ -49,6 +54,7 @@ const imagesList = [
       'https://assets.ccbp.in/frontend/react-js/match-game/giraffe-thumbnail-img.png',
     category: 'ANIMAL',
   },
+// 💡 [RYFT REVIEW - SUGGESTION] Consider using a more robust data structure for imagesList, such as a Map or an object with more properties
   {
     id: '176aab62-e86a-4ccd-8b89-5b83c3f02506',
     imageUrl:
@@ -249,6 +255,9 @@ const imagesList = [
 ]
 
 // Replace your code here
+// 💡 [RYFT REVIEW - SUGGESTION] Consider breaking down the JSX into smaller components for better reusability and maintainability
+// 💡 [RYFT REVIEW - SUGGESTION] Consider using a more robust JSX syntax, such as using curly braces for attribute values
 const App = () => <GameInfo tabsList={tabsList} imagesList={imagesList} />
 
+// 💡 [RYFT REVIEW - SUGGESTION] Consider using a more robust export syntax, such as using named exports
 export default App
